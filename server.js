@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 const port = process.env.PORT || 5000;
-const uri = process.env.ATLAS_URI || "mongodb://localhost:27017/ArtList";
+const uri = "mongodb+srv://ashan:ashan123@cluster0.f7hw40s.mongodb.net/ArtList";
 
 mongoose.connect(uri, {
   useNewUrlParser: true,
